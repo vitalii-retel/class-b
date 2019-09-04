@@ -1,0 +1,38 @@
+.Schedule {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Schedule ul {
+    padding: 0;
+    margin: 0;
+    list-style: inside decimal;
+}
+
+.Schedule-day {
+    min-width: 100px;
+    padding: 10px;
+}
+
+.Schedule-day:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.Schedule-day:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.Schedule-day-title {
+    font-size: 1.2em;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 0 3px 0;
+}
+
+.Schedule-day-notes {
+    margin-top: 15px;
+    font-size: 0.7em;
+}
+
+.Schedule-day-notes p {
+    margin: 0;
+}
