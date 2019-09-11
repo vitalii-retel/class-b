@@ -2,8 +2,11 @@ pipeline {
     agent {
         docker {
             image 'node:10-alpine'
-            args '-p 3000:3000'
+            args '-v /var/www/html:/target:rw'
         }
+    }
+    options {
+        skipStagesAfterUnstable()
     }
     environment {
         HOME = '.'
@@ -25,10 +28,22 @@ pipeline {
                 sh 'npm run build'
             }
         }
+        stage('Arch') {
+            steps {
+                zip zipFile: 'class-b-0.zip', dir: 'build', archive: false
+                archiveArtifacts artifacts: 'class-b-*.zip', fingerprint: true
+            }
+        }
         stage('Deploy') {
             steps {
-                sh ''
+                sh 'rm -rf /target/*'
+                sh 'cp -r build/* /target'
             }
+        }
+    }
+    post {
+        cleanup {
+            cleanWs()
         }
     }
 }

@@ -8,28 +8,31 @@ function Schedule() {
         <div className="Schedule-day">
           <p className="Schedule-day-title">Понеділок</p>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Математика</li>
+            <li>Англійська мова</li>
+            <li>Читання</li>
+            <li>Українська мова</li>
+            <li>Я пізнаю світ</li>
           </ul>
         </div>
         <div className="Schedule-day">
           <p className="Schedule-day-title">Вівторок</p>
           <ul>
-            <li>Українська мова</li>
             <li>Я пізнаю світ</li>
             <li>Математика</li>
+            <li>Я пізнаю світ</li>
+            <li>Я пізнаю світ</li>
             <li>Фізична культура</li>
           </ul>
         </div>
         <div className="Schedule-day">
           <p className="Schedule-day-title">Середа</p>
           <ul>
+            <li>Музика</li>
+            <li>Англійська мова</li>
+            <li>Я пізнаю світ</li>
             <li>Українська мова</li>
             <li>Читання</li>
-            <li>Англійська мова</li>
-            <li>Математика</li>
           </ul>
         </div>
         <div className="Schedule-day">
@@ -37,22 +40,24 @@ function Schedule() {
           <ul>
             <li>Я пізнаю світ</li>
             <li>Математика</li>
-            <li>Англійська мова</li>
-            <li>Мистецтво</li>
+            <li>Я пізнаю світ</li>
+            <li>Я пізнаю світ</li>
+            <li>ГТС (Вих.година 20 хв)</li>
           </ul>
         </div>
         <div className="Schedule-day">
           <p className="Schedule-day-title">П'ятниця</p>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Англійська мова</li>
+            <li>Фізична культура</li>
+            <li>Українська мова</li>
+            <li>Читання</li>
           </ul>
         </div>
       </div>
       <div className="Schedule-day-notes">
         <p>Всі три зошити носіть разом</p>
+        <p>Тоненький зошит у клітинку на англійську мову</p>
       </div>
     </div>
   );
