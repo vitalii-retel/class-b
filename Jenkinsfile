@@ -6,7 +6,10 @@ pipeline {
         }
     }
     options {
+        buildDiscarder(logRotator(numToKeepStr: '10'))
         skipStagesAfterUnstable()
+        disableConcurrentBuilds()
+        timeout(time: 3, unit: 'MINUTES')
     }
     environment {
         HOME = '.'
