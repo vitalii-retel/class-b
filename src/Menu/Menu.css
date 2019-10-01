@@ -5,4 +5,5 @@
 .Menu a {
     display: block;
     margin-bottom: 8px;
+    cursor: pointer;
 }

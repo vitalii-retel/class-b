@@ -1,0 +1,37 @@
+.Bells {
+    display: inline-block;
+}
+
+.Bells .Bells-header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.Bells .Bells-row {
+    display: flex;
+    text-align: center;
+}
+
+.Bells .Bells-row div {
+    padding: 3px 5px;
+}
+
+.Bells .Bells-row div:nth-child(1) {
+    width: 50px;
+}
+
+.Bells .Bells-row div:nth-child(2) {
+    width: 120px;
+}
+
+.Bells .Bells-row div:nth-child(3) {
+    width: 80px;
+}
+
+.Bells .Bells-row:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.Bells .Bells-row:nth-child(even) {
+    background-color: #f9f9f9;
+}

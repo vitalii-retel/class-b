@@ -24,6 +24,7 @@
 
 .Schedule-day-title {
     font-size: 1.2em;
+    font-weight: bold;
     border-bottom: 1px solid #dddddd;
     margin: 0 0 3px 0;
 }
