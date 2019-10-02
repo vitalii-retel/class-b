@@ -22,6 +22,8 @@ class App extends React.Component {
         return <Schedule />;
       case 'bells':
         return <Bells />;
+      default:
+        return '';
     }
   }
 
