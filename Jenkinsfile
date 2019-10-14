@@ -37,7 +37,12 @@ pipeline {
                 archiveArtifacts artifacts: 'class-b-*.zip', fingerprint: true
             }
         }
-        stage('Deploy') {
+        stage('Deploy Public') {
+            steps {
+                sh 'npm run deploy'
+            }
+        }
+        stage('Deploy Local') {
             steps {
                 sh 'rm -rf /target/*'
                 sh 'cp -r build/* /target'
